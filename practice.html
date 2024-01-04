@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Precious Okafor" />
+    <meta name="description" content="This page containd all the things I am learning how to create as I learn HTML.">
+    <title>My First Web Page</title>
+    <style>
+        html {
+            font-size: 22px
+        }
+
+        body {
+            background-color: #ff006e;
+            color: black;
+        }
+        a {
+            color: aliceblue;
+        }
+        a:visited {
+            color: lightgray;
+        }
+        a:hover, a:active {
+            color: #eee;
+        }
+    </style>
+    <link rel="stylesheet" href="main.css"  type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>My Goals For The Year</h1>
+
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#html">learning HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning A Vacation</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr />
+
+    <main>
+
+        <section id="html">
+            <h2>I'm ready to learn HTML</h2>
+            <p>This is my first web page.</p>
+            <figure>
+
+                <figcaption>Example of HTML code</figcaption>
+                <p>
+                    <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                </p>
+            </figure>
+            <h3>My Daily Schedule</h3>
+            <p>
+                Let me tell you how:
+                <ol>
+                    <li>...I learn more about Web Dev.</li>
+                    <li>...I plan out my schedule.</li>
+                    <li>
+                        ...I use resources from <abbr title="Mozilla Developer Network">
+                            <a href="https://developer.mozilla.org/">MDN</a>
+                        </abbr> and materials from <abbr title="Crawford University">CRU</abbr>.
+                    </li>
+                </ol>
+        </section>
+        <aside>
+            <details>
+                <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                <p>I code for 3 hours everyday.</p>
+            </details>
+        </aside>
+
+        <br />
+        <table>
+            <caption>My Daily Schedule</caption>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Morning</th>
+                    <td>
+                        <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                    </td>
+                    <td>Write Code</td>
+                </tr>
+                <tr>
+                    <th>Break</th>
+                    <td>
+                        <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                    </td>
+                    <td>Eat Breafast</td>
+                </tr>
+                <tr>
+                    <th>Afternoon</th>
+                    <td>
+                        <time datetime="12:00">12pm</time>-<time datetime="5:00">5pm</time>
+                    </td>
+                    <td>Study for other courses</td>
+                </tr>
+                <tr>
+                    <th>Evening</th>
+                    <td rowspan="2">All Other Times</td>
+                    <td>Free Time</td>
+                </tr>
+                <tr>
+                    <th>Night</th>
+                    <td>Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">And that's what I do everyday.</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <hr />
+
+        <section id="vacation">
+            <h2>I Am Also Planning A Vacation.</h2>
+            <p>I've been working hard and <em>really need a getaway</em>.</p>
+            <p>I live in Nigeria, so I want to visit a beach.</p>
+            <h3>Places I'd Like to visit</h3>
+            <ul>
+                <li>
+                    <p>I've heard good things about the Caribbean.</p>
+                </li>
+                <li>
+                    <p>I've heard good things about going here:</p>
+                    <address>
+                        Oriental Hotels, Lagos.<br />
+                        <figure>
+                            <img src="oriental.png" alt="oriental hotel" width="654" height="444" loading="lazy" />
+                            <figcaption>Oriental Hotels front view</figcaption>
+                        </figure>
+                        Eko Hotels, Lagos<br />
+                        <figure>
+                            <img src="Eko.png" alt="Eko Hotel" width="654" height="500" loading="lazy" />
+                            <figcaption>Eko Hotels Beach</figcaption>
+                        </figure>
+                        Sheraton Hotels, Lagos
+                        <figure>
+                            <img src="sheraton.png" alt="sheraton Hotels" width="654" height="385" loading="lazy" />
+                            <figcaption>Sheraton front view</figcaption>
+                        </figure>
+                    </address>
+                </li>
+            </ul>
+            <!.. TODO: Add more places..>
+            <h3>Places I Want to Avoid</h3>
+            <dl>
+                <dt>North Pole</dt>
+                <dd>I hear this is <strong>cold</strong>!</dd>
+
+                <dt>South pole</dt>
+                <dd>This is also cold</dd>
+
+                <dt>Mountain Tops</dt>
+                <dd>These are also cold.</dd>
+            </dl>
+        </section>
+        
+        <hr />
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you!</p>
+
+            <form action="htttps://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="First Name">First Name:</label> <input type="text"
+                                                                           name="firstName" id="firstName" placeholder="Precious" autocomplete="on"
+                                                                           required autofocus />
+                    </p>
+                    <p>
+                        <label for="Last Name">Last Name:</label> <input type="text"
+                                                                         name="lastName" id="lastName" placeholder="Okafor" autocomplete="on"
+                                                                         required autofocus />
+                    </p>
+                    <p>
+                        <label for="Password">Password:</label> <input type="password"
+                                                                       name="password" id="password" placeholder="Your Secret"
+                                                                       required autofocus />
+                </fieldset>
+                </p>
+                <br />
+                <fieldset>
+                    <legend>What is your favourite food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="spaggetti" value="spaggetti" />
+                        <label for="spaggetti">spaggetti</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="rice" value="rice" />
+                        <label for="rice">rice</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="yam" value="yam" />
+                        <label for="yam">yam</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="other" />
+                        <label for="other">other</label>
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Do you have Pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog" />
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat" />
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish" />
+                        <label for="fish">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="otherpet" value="otherpet" />
+                        <label for="otherpet">Other</label>
+                    </p>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your Message:</label>
+                    <br />
+                    <textarea name="message" id="message" cols="30" rows="10"
+                              placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br />
+                <button type="submit" />Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+
+    <hr />
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Precious Okafor</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
+</body>
+</html>
